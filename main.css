@@ -1,0 +1,188 @@
+@font-face{
+  font-family: bit;
+  src: url(./css/8-BIT\ WONDER.TTF);
+}
+
+*,*::after, *::before´{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body{
+  font-family: bit;
+}
+
+.grid{
+  
+ 
+
+  grid-gap: 1.1em;
+  display: grid;
+  grid-template-columns: 30vw 1fr;
+  grid-template-rows: 90px 90px auto 130px;
+  padding: 1.6em;
+  
+}
+
+.box{
+  border: 1px solid black;
+ 
+  text-align: center;
+  display: flex;
+  font-size: 2em;
+  justify-content: center;
+  align-content: center;
+}
+
+.username{
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  background-color: #FAFFD5;
+ 
+}
+
+.name{
+
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  display: flex;
+  background-color: #FF8E99;
+ 
+}
+.image{
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  background-color: #707070;
+}
+.image img{
+  width: 100%;
+}
+.lvl{
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+  background-color: #C9C9C9;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+  
+  
+}
+.levels{
+  list-style: none;
+  
+}
+.levels li{
+  font-weight: lighter;
+  font-size: 1.2em;
+
+}
+.levels li span{
+  font-size: 1.6em;
+}
+
+.coins{
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 5px;
+ 
+}
+.coins img{
+  width: 70px;
+  
+  
+
+}
+.coins p{
+  font-size: 3em;
+  color: #707070;
+  display: inline-block;
+
+ 
+}
+.stats{
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  text-align: center;
+  font-size: 4em;
+  border-bottom: 1px solid black;
+
+}
+.content{
+  grid-column: 2 / 3;
+  grid-row: 3 / 5;
+  background-color: #E8E5E5;
+  padding: 1.1em;
+}
+
+.secondgrid{
+  display: grid;
+  grid-template-columns: 100px 1fr 100px;
+  grid-template-rows: 1fr;
+}
+
+.secondgrid ul{
+  list-style: none;
+}
+.language ul li{
+  margin: 10px
+}
+
+.language{
+  grid-column: 1 / 2;
+
+}
+
+.lvlpercent{
+  grid-column: 2/3;
+  grid-row: 1;
+  
+
+}
+.lvlpercent ul li{
+  color: #6BD5FC;
+  margin: 10px
+}
+
+.percent{ grid-column: 3 / 4;
+}
+
+.percent ul li{
+  margin: 10px;
+}
+
+.alone{
+  font-size: 2em;
+  text-align: center;
+  margin: 20px 0 0 0;
+  background-color: #707070;
+  color: #fff;
+  padding: 20px;
+}
+.choose{
+  display: flex;
+  margin: 90px 0 0;
+  justify-content: space-around;
+  font-size: 2em;
+  position: relative;
+}
+
+.retro img{
+  position: relative;
+  float: left;
+  width: 90px;
+  left: 0;
+  top: -20px;
+}
+
+.hidden{
+  display: none;
+}
+
+.show{
+  display: block;
+}
+
+.feo{
+  font-size: .7em;
+}
