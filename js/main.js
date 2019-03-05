@@ -1,23 +1,11 @@
-let x = 0;
-let elements = document.getElementsByClassName('sword');
-let array = [...elements];
+function wait(message, callback, seconds){
+    setTimeout(callback,seconds * 1000);
+    console.log(message);
+}
 
-array[0].classList.remove('hidden');
+function selfDestruct(){
+    console.log('BOOOOM!');
+}
 
-
-document.addEventListener('keydown',(e) =>{
-    array.forEach(x =>{x.classList.add('hidden')});
-
-    if(e.keyCode == '39'){
-        if(x <2){
-            x++;
-        }
-    }
-    if(e.keyCode == '37'){
-        if(x > 0){
-            x--;
-        }
-    }
-
-    array[x].classList.remove('hidden');
-});
+wait('This tape will self-destruct in five seconds ... ', selfDestruct, 5);
+console.log('Hmmm, should I accept this mission or not ... ?');
